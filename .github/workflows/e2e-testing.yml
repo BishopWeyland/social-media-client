@@ -1,0 +1,22 @@
+name: Automated Cypress Testing
+on:
+  - pull_request
+  - workflow_dispatch
+
+jobs:
+  cypress-run:
+    name: Run E2E Tests
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Write the cypress.env.json file
+        run: |
+          echo '{
+            "email": "'${{ secrets.CYPRESS_ENV.email }}'",
+            "password": "'${{ secrets.CYPRESS_ENV.password }}'"
+          }' > cypress.env.json
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
