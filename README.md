@@ -28,6 +28,17 @@ Prettier and ESlint is configured to run on pre-commits in the .git/hooks folder
 4. Require conversation resolution before merging
 5. Do not allow bypassing the above settings
 
+## Jest Unit Testing
+
+Run Unit test:
+``` 
+npm run test-unit
+```
+
+### Tests
+1. The login function fetches and stores a token in browser storage
+2. The logout function clears the token from browser storage
+
 ## Cypress E2E Testing
 Create a `cypress.env.json` in your root folder and copy the example from `cypress.env.example.json`. Change out to your own credentials.
 Remeber to add `cypress.env.json` to your `.gitignore`!
@@ -36,3 +47,14 @@ Run E2E test:
 ``` 
 npm run test
 ```
+### Tests
+1. Invalid user credentials for login.
+2. Valid user credentials for login.
+3. Logout user.
+
+## Github Actions
+1. `Deploy and Build`a static page on push.
+2. `Unit testing` on pull_request and workflow_dispatch
+3. `E2E testing` on pull_request and workflow_dispatch
+
+Remember to add your `cypress.env.json` credentials to `secrets` in the `action` tab to run the `E2E testing`.
