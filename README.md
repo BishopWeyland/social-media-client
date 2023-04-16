@@ -33,4 +33,6 @@ Create a `cypress.env.json` in your root folder and copy the example from `cypre
 Remeber to add `cypress.env.json` to your `.gitignore`!
 
 Run E2E test:
-```sh npm run test ```
+``` 
+npm run test
+```
