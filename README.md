@@ -2,3 +2,16 @@
 [![Unit Testing](https://github.com/BishopWeyland/social-media-client/actions/workflows/unit-test.yml/badge.svg)](https://github.com/BishopWeyland/social-media-client/actions/workflows/unit-test.yml)
 [![Run E2E Testing](https://github.com/BishopWeyland/social-media-client/actions/workflows/e2e-test.yml/badge.svg)](https://github.com/BishopWeyland/social-media-client/actions/workflows/e2e-test.yml)
 
+# Social Media Client - Noroff Workflow CA
+
+
+## Getting Started
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/BishopWeyland/social-media-client.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
